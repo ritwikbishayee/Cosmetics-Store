@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Cart</title>
+  </head>
+  <body>
+    <div class="container">
+      <h4 class="text-center m3" style="color: rgb(47, 38, 227)">Cart items</h4>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4D__m-eekrBVFBjmCKIYVAWVLRqEXqkc5WarRheHDupEhXqlatsnZWzJ8BBvZu7GxdzE&usqp=CAU"
+        height="80"
+        width="500"
+      />
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Sl No.</th>
+            <th>Items</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+
+            <td>
+              lipstick
+            </td>
+            <td>
+              <input
+                type="number and spacial character"
+                name="qty1"
+                id="qty1"
+                value="$19"
+                onchange="calculateAmount(this.value,1)"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="price1"
+                id="price1"
+                value="1"
+                disabled
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="amount1"
+                id="amount1"
+                value="3.5"
+                disabled
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              Kajal
+              
+            </td>
+
+            <td>
+              <input
+                type="number and spacial character"
+                name="qty2"
+                id="qty2"
+                value="$21"
+                onchange="calculateAmount(this.value,2)"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="price2"
+                id="price2"
+                value="2"
+                disabled
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="amount2"
+                id="amount2"
+                value="3.7"
+                disabled
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+              Mascara
+            </td>
+            <td>
+              <input
+                type="number and spacial character"
+                name="qty3"
+                id="qty3"
+                value="$12"
+                onchange="calculateAmount(this.value,3)"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="price3"
+                id="price3"
+                value="1"
+                disabled
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="amount3"
+                id="amount3"
+                value="4.0"
+                disabled
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+            sunscrean
+            </td>
+            <td>
+              <input
+                type="number and spacial character"
+                name="qty3"
+                id="qty3"
+                value="$31"
+                onchange="calculateAmount(this.value,3)"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="price3"
+                id="price3"
+                value="1"
+                disabled
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="amount3"
+                id="amount3"
+                value="4.2"
+                disabled
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>
+              Serun
+            </td>
+
+            <td>
+              <input
+                type="number and spacial character"
+                name="qty3"
+                id="qty3"
+                value="$15"
+                onchange="calculateAmount(this.value,3)"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="price3"
+                id="price3"
+                value="1"
+                disabled
+              />
+            </td>
+            <td>
+
+              <input
+                type="text"
+                name="amount3"
+                id="amount3"
+                value="4.5"
+                disabled
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4" class="text-right"><strong>Total</strong></td>
+            <td><p id="tot"></p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script>
+
+
+      function calculateTotal(){
+          var total=0;
+          for(var i=1;i<=6; i++){
+              total+=parseInt(document.getElementById('price3'+i).qty3);
+              document.getElementById('tot').innerHTML=total;
+          }
+      }
+      calculateTotal();
+      function itemname(){
+          var
+          for(var i=1;i<=6; i++){
+              total+=parseInt(document.getElementById('price3'+i).qty3);
+              document.getElementById('tot').innerHTML=total;
+          }
+      }
+      calculateTotal();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
